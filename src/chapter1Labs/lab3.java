@@ -13,7 +13,6 @@ public class lab3 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 //		EXERCICE 1 :
 //		Question 2
 //		String[] daysOfWeeks = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
@@ -35,7 +34,7 @@ public class lab3 {
 //		for (int i=6; 0 <=i && i < daysOfWeeks.length ; i--) {
 //			System.out.println(daysOfWeeks[i]);
 //		}
-		
+//--------------------------------------------------------------------------------
 //		EXERCICE 2 :
 //		int i=0;
 //		while(i<= 20) {
@@ -44,14 +43,14 @@ public class lab3 {
 //			i++;
 //
 //		}
-		
+//----------------------------------------------------------------------
 //		EXERCICE 3 :
 //		for(int i=1;i<=100;i++) {
 //			if(i>=50 && i<=60) 
 //				continue;
 //			System.out.print(i+",");
 //		}
-		
+//----------------------------------------------------------------------------------------------------------------------------------------
 //		EXERCICE 4 :
 //		String[] months = {"January","February","May","April","March","June","July","Aout","September","October","November","December"};	
 //		int c=1;
@@ -81,14 +80,34 @@ public class lab3 {
 //			}
 //			c++;
 //		}
-		
+//--------------------------------------------------------------------------------------------------
 // 		CHALLENGE EXERCICE :
 		String[] days= {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
-		for(String d:days)
+		for(String d:days) 
 			System.out.print(d + " ");
-		for() {
+		
+		System.out.print("\n");
 			
+		int left_off=4;
+		int daysCount=1;
+		boolean printing=false;
+		
+		for(int y=0;y<6;y++) {
+			for(int x=0;x<days.length;x++) {
+				if(printing==false) {
+					System.out.print("\t");
+					if(x==left_off)
+						printing=true;
+				}
+				else if(daysCount<=31) {
+						System.out.print(daysCount+"\t");
+						daysCount++;
+				}
+				
+			}	
+			System.out.println();
 		}
+//------------------- END -------------------
 	}
 
 }
